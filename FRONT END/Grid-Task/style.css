@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Lexend Deca',
+        sans-serif;
+    font-weight: 400;
+}
+
+.container {  
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "One Two Three"
+        "One Two Three"
+        ". . .";
+}
+
+.main {
+    border-radius: 12px;
+    overflow: hidden;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+
+.One {
+    grid-area: One;
+    background: hsl(31, 77%, 52%);
+}
+
+.Two {
+    grid-area: Two;
+    background: hsl(184, 100%, 22%);
+}
+
+.Three {
+    grid-area: Three;
+    background: hsl(179, 100%, 13%);
+}
+
+.box {
+    padding: 40px;
+}
+
+.box h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-size: 30px;
+}
+
+.box p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.6;
+}
+
+.box a {
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    padding: 13px 27px;
+    border-radius: 26px;
+    margin-top: 60px;
+    display: inline-block;
+    border: 2px solid hsl(0, 0%, 95%);
+    transition: all .4s ease-in-out;
+}
+
+.One a {
+    color: hsl(31, 77%, 52%);
+}
+
+.Two a {
+    color: hsl(184, 100%, 22%);
+}
+
+.Three a {
+    color: hsl(179, 100%, 13%);
+}
+
+.box a:hover {
+    color: hsl(0, 0%, 95%);
+    background: transparent;
+}
+

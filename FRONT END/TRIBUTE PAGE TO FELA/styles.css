@@ -1,0 +1,23 @@
+body {
+    background-color: #fb9500;
+    margin: 20px;
+    padding: 10px;
+}
+
+.frame {
+    background-color: #00ae3f;
+    margin: 20px;
+    padding: 10px;
+}
+
+h1 {
+    color: #b20700;
+}
+
+p {
+    font-size: 20px;
+}
+
+ul {
+    font-size: 20px;
+}
